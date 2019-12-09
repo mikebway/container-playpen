@@ -26,5 +26,5 @@ could not resolve digest for docker.pkg.github.com/mikebway/container-playpen/pa
 The important part of that being that Kubernetes `could not resolve digest` for the image, i.e. could not validate
 that the image's integrity had not been compromised. This point was only reached after typing the package name
 correctly (fat fingers), and configuring the `partner.yaml` to reference a Kubernetes secret with an appropriate
-GitHub personal access token. Those issues gave difference errors. `could not resolve digest` has so far proved
-more intractible.
+GitHub personal access token. Those issues gave different and solvable errors; `could not resolve digest` has so far
+proved more intractible.
