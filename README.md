@@ -17,7 +17,10 @@ MicroK8s version I am running (v1.16.3 - latest stable), or with Kubernetes in g
 deploy the pod described by [`partner.yaml`](partner.yaml) fails with this message:
 
 ```text
-Failed to pull image "docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0": rpc error: code = Unknown desc = failed to resolve image "docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0": no available registry endpoint: could not resolve digest for docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0
+Failed to pull image "docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0": rpc error: \
+code = Unknown desc = failed to resolve image \
+"docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0": no available registry endpoint: \
+could not resolve digest for docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0
 ```
 
 The important part of that being that Kubernetes `could not resolve digest` for the image, i.e. could not validate
