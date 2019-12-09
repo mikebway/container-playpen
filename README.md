@@ -28,3 +28,6 @@ that the image's integrity had not been compromised. This point was only reached
 correctly (fat fingers), and configuring the `partner.yaml` to reference a Kubernetes secret with an appropriate
 GitHub personal access token. Those issues gave different and solvable errors; `could not resolve digest` has so far
 proved more intractible.
+
+Deploying the Docker hub image referenced by the [`hello-world.yaml`](hello-world.yaml) pod description works just
+fine with the same [MicroK8s](https://microk8s.io/) installation.
