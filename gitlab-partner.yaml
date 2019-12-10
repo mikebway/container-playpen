@@ -6,11 +6,11 @@ metadata:
 spec:
   restartPolicy: Never
   imagePullSecrets:
-    - name: githubcred
+    - name: gitlabcred
   containers:
     - name: partner-grpc
       image: >-
-        docker.pkg.github.com/mikebway/container-playpen/partner-grpc:1.0.0
+        registry.gitlab.com/mikebway/container-playpen/partner-grpc:1.0.0
       ports:
         - containerPort: 50051
           protocol: TCP
