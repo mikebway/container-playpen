@@ -13,10 +13,8 @@ spec:
       ports:
         - containerPort: 50051
           protocol: TCP
-      restartPolicy: Never
     - name: partner-gql
       image: registry.gitlab.com/mikebway/container-playpen/partner-gqp:1.0.0
       ports:
         - containerPort: 4000
           protocol: TCP
-      restartPolicy: Never
