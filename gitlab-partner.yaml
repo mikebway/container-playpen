@@ -14,7 +14,7 @@ spec:
         - containerPort: 50051
           protocol: TCP
     - name: partner-gql
-      image: registry.gitlab.com/mikebway/container-playpen/partner-gqp:1.0.0
+      image: registry.gitlab.com/mikebway/container-playpen/partner-gql:1.0.0
       ports:
         - containerPort: 4000
           protocol: TCP
