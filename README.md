@@ -1,6 +1,6 @@
 # Container Playpen
 
-Thie repo contains no code or anything else of much use to anybody other than myself. It is only public
+This repo contains no code or anything else of much use to anybody other than myself. It is only public
 in order that I can more easily play with a toy [MicroK8s](https://microk8s.io/) installation without
 struggling with private container repository keys.
 
@@ -30,4 +30,7 @@ GitHub personal access token. Those issues gave different and solvable errors; `
 proved more intractible.
 
 Deploying the Docker hub image referenced by the [`hello-world.yaml`](hello-world.yaml) pod description works just
-fine with the same [MicroK8s](https://microk8s.io/) installation.
+fine with the [MicroK8s](https://microk8s.io/) installation.
+
+Using the same image(s) as those refrenced in [`partner.yaml`](partner.yaml) but switching from using GitHub
+as a container repository to using GitLab in [`gitlab-partner.yaml`](gitlab-partner.yaml) worked perfectly.
